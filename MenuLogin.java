@@ -3,8 +3,6 @@ import java.awt.*;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import java.io.File;
-// import java.io.IOException;
-// import java.io.UnsupportedEncodingException;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 

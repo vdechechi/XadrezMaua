@@ -1,4 +1,4 @@
-// Classe “CryptoDummy.java”
+
 import java.io.*;  
 public   class CryptoDummy
 {  private     byte[]   textoCifrado;
@@ -8,9 +8,9 @@ public   class CryptoDummy
       textoDecifrado = null;
    }
    public void geraChave(File fDummy) throws IOException  
-   {  // Gera uma chave Dummy simetrica (dk: 0 a 100):
+   {  
       int   dk = (int) (Math.random()*101);
-      // Grava a chave Dummy simetrica em formato serializado  
+      
       ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(fDummy));  
       oos.writeObject(dk);  
       oos.close();

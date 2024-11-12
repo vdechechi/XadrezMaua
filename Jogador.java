@@ -9,12 +9,12 @@ public class Jogador {
     private List<JogadaInfo> jogadas;
     private int indiceJogadaAtual;
     private Connection conn;
-    private String abertura; // Novo campo para armazenar o nome da abertura
-    private String variacao; // Novo campo para armazenar a variação
+    private String abertura; 
+    private String variacao; 
 
     public Jogador(String abertura, String variacao) {
-        this.abertura = abertura; // Inicializa o campo abertura
-        this.variacao = variacao; // Inicializa o campo variacao
+        this.abertura = abertura; 
+        this.variacao = variacao; 
         jogadas = new ArrayList<>();
         indiceJogadaAtual = 0;
         conn = Jogada.getConexao();

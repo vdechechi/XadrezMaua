@@ -21,7 +21,7 @@ public class ReadTextFile {
         StringBuilder texto = new StringBuilder();
         try {
             while (input.hasNext()) {
-                String str = input.nextLine().trim(); // remove espaços extras
+                String str = input.nextLine().trim(); 
                 texto.append(str);
             }
         } catch (NoSuchElementException elementException) {
@@ -29,7 +29,7 @@ public class ReadTextFile {
             input.close();
             System.exit(1);
         }
-        return texto.toString().trim(); // remove espaços ao final
+        return texto.toString().trim(); 
     }
 
     public void closeFile() {
